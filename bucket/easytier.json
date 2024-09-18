@@ -16,8 +16,8 @@
         ]
     ],
     "bin": ['easytier-core.exe', 'easytier-cli.exe'],
-    "persist": ".config",
     "checkver": {"github": "https://github.com/EasyTier/EasyTier"},
+    "extract_dir": "easytier-windows-x86_64",
     "autoupdate": {
         "architecture": {
             "64bit": {
