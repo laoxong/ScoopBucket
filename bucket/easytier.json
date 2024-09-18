@@ -1,0 +1,29 @@
+{
+    "version": "1.2.3",
+    "description": "A simple, secure, decentralized VPN mesh network solution",
+    "homepage": "https://easytier.rs/",
+    "license": "Apache-2.0-license",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/EasyTier/EasyTier/releases/download/v1.2.3/easytier-windows-x86_64-v1.2.3.zip",
+            "hash": "10f2096f733ac91340da011a1d0a0c4a3c6e49c16515a49443cd167449b1bd4e"
+        }
+    },
+    "shortcuts": [
+        [
+            "easytier-core.exe",
+            "easytier-cli.exe"
+        ]
+    ],
+    "bin": ['easytier-core.exe', 'easytier-cli.exe'],
+    "persist": ".config",
+    "checkver": {"github": "https://github.com/EasyTier/EasyTier"}
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/EasyTier/EasyTier/releases/download/v$version/easytier-windows-x86_64-v$version.zip"
+            }
+        }
+    }
+}
+
